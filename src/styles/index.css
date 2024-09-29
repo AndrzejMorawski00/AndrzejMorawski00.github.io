@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dark {
+    --backgroundColor: 15, 23, 42, 255;
+    --headerBorderColor: 9, 17, 31, 255;
+
+    --headerUnderlineActive: 255, 0, 0;
+    --headerUnderlineHover: 100, 0, 0;
+    --headerFont: 255, 255, 255;
+    --headerFontHover: 200, 200, 200;
+    --headerThemeBackground: 15, 60, 76;
+    --headerThemeIcon: 252, 186, 3;
+
+    --mainFont: 255, 255, 255;
+    --mainIcon: 255, 255, 255;
+    --mainIconHover: 200, 0, 0;
+    --dataDescription: 171, 174, 181;
+    --skillIconColor: 65, 73, 92;
+}
+
+.light {
+    --backgroundColor: 239, 239, 215;
+    --headerBorderColor: 209, 209, 182, 255;
+
+    --headerUnderlineActive: 255, 0, 0;
+    --headerUnderlineHover: 150, 0, 0;
+    --headerFont: 25, 25, 25;
+    --headerFontHover: 50, 50, 50;
+    --headerThemeBackground: 209, 209, 182, 255;
+    --headerThemeIcon: 15, 23, 42, 255;
+
+    --mainFont: 25, 25, 25;
+    --mainIcon: 50, 50, 50;
+    --mainIconHover: 200, 0, 0;
+    --dataDescription: 100, 100, 100;
+
+    --skillIconColor: 209, 209, 190;
+}
+
+@layer components {
+    .LinkStyles {
+        position: relative;
+        text-decoration: none;
+        padding-bottom: 0.25rem;
+        letter-spacing: 0.05em;
+    }
+
+    .LinkStyles::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        transform: scaleX(0);
+        transform-origin: top left;
+        transition: transform 0.15s ease-in;
+        @apply bg-headerUnderlineHover;
+    }
+
+    .LinkStyles:hover::before {
+        transform: scaleX(1);
+    }
+
+    .activeLinkStyles::before {
+        transform: scaleX(1);
+        @apply bg-headerUnderlineActive;
+    }
+}
