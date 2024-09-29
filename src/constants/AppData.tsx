@@ -3,6 +3,9 @@ import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 
 import { EducationData, ProjectData, Technology, UserSocialMedia } from "../types/AppData";
 
+export const USER_DESCRIPTION =
+    "I am a third-year Computer Science student at the University of Wrocław. I am looking for an internship that will allow me to gain practical knowledge in programming. Currently, I am developing my backend skills by learning Python and the Django framework, while also deepening my frontend knowledge by learning the React library. I am open to new technologies, a fast learner, and eager to face challenges that will improve my skills.";
+
 export const EDUCATION_DATA: EducationData[] = [
     {
         university: "University of Wrocław",

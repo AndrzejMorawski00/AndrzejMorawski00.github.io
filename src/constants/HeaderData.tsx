@@ -12,4 +12,13 @@ export const HeaderLinks: HeaderLinkData[] = [
     { name: "Projects", path: "projects/", display: true, element: <Projects /> },
 ];
 
-export const CVLinks: CVLinkData[] = [];
+export const CVLinks: CVLinkData[] = [
+    {
+        name: "CV Pl",
+        path: "cv/CV_Pl_np.pdf",
+    },
+    {
+        name: "CV Ang",
+        path: "cv/CV_Ang_np.pdf",
+    },
+];

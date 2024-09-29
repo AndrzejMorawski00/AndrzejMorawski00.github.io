@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { CONTACT_DATA } from "../constants/AppData";
+import { CONTACT_DATA, USER_DESCRIPTION } from "../constants/AppData";
 
 interface Props {}
 
@@ -11,9 +11,7 @@ const AboutMe = ({}: Props) => {
                     About Me:
                 </h2>
                 <p className="font-textSans text-mainFont text-xl lg:text-2xl pt-5 pl-2">
-                    I'm a third year CS Student at University of Wrocław. I'm looking for an internship, which will help
-                    me gain experience in programming. Currently I advance at backend web development by learning Django
-                    framework.
+                    {USER_DESCRIPTION}
                 </p>
             </div>
 
@@ -30,7 +28,9 @@ const AboutMe = ({}: Props) => {
                                 className="text-mainFont transition duration-300 hover:text-mainIconHover"
                             >
                                 <FontAwesomeIcon className="text-3xl lg:text-4xl " icon={item.icon} />
-                                <span className="font-textSans  ml-3 text-2xl lg:text-3xl pt-5 max-w-[50vw] ">{item.name}</span>
+                                <span className="font-textSans  ml-3 text-2xl lg:text-3xl pt-5 max-w-[50vw] ">
+                                    {item.name}
+                                </span>
                             </a>
                         </li>
                     ))}
