@@ -53,7 +53,7 @@ export const TECH_DATA: Technology[] = [
     { iconPath: "/icons/techs/cpp.svg", name: "C++" },
 ];
 
-export const OTHER_SKILLS: string[] = ['DS&Algorithms',"OOP", "Design Patterns", "Open minded", 'Fast Lerner'];
+export const OTHER_SKILLS: string[] = ['DS&Algorithms',"OOP", "Design Patterns", "Open minded", 'Fast Learner'];
 
 export const PROJECT_LIST: ProjectData[] = [
     {
